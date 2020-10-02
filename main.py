@@ -1,7 +1,7 @@
+
+
+
 print("Welcome to the 'Negocia' - the land of Knights and Amazons")
-
-
-
 
 hero = None
 hero_choosen = None
@@ -27,18 +27,24 @@ while True:
 # Choosing the hero.
 
 if start_a_game == 'Y':
-    hero_choosen = input("Choose your hero: Knight or Amazon? >> ").capitalize()
+    while True:
+        if True:
+            hero_choosen = input("Choose your hero: Knight or Amazon? >> ").capitalize()
+            if hero_choosen == "Knight":
+                print("Draw your sword Knight! From now your name is Anos!")
+                hero = knight()
+                break
+            elif hero_choosen == "Amazon":
+                ''' Untag when Amazon option will be avaiable.
+                 print("Raise your spear, Amazon! From know you should call yourself Samira!")
+                 hero = amazon()
+                break'''
+                print('Sorry, the Amazon is not avaiable yet.')
+            else:
+                print("There\'s some error! Try to write the name of hero with capital letter.")
 
 
-#if hero_choosen == "Knight":
-    print("Draw your sword Knight! From now your name is Anos!")
-    hero = knight()
-#elif hero_choosen == "Amazon":
-    # print("Raise your spear, Amazon! From know you should call yourself Samira!")
-    # hero = amazon()
-    print('Sorry, the Amazon is not avaiable yet.')
-#else:
-    print("There\'s some error! Try to write the name of hero with capital letter.")
+
 
 
 
